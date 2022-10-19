@@ -1,0 +1,19 @@
+Øving 3 debugging
+
+Del 1:
+Utløses feil i linje 28. Lager breakpoint der. 
+drinkCoffe utløser illegalargumentexception. isValidVolume er true, men canDrink er false, da currentVolume(5) < volume (40). Kapasitet er 57.
+
+Del 2:
+
+Breakingpoint på 41 og 45 siden det er der man kaller funksjonen fillCoffee.
+Start:
+1. iterasjon: Volume = 24, capacity = 40, currentVolume = 14.5
+2.: Volume = 24, capacity = 40, currentVolume = 38.5
+3.: Volume = 2, capacity = 40, currentVolume = 36.5
+4.: Volume = 30, capacity = 40, currentVolume = 6.5
+5.: Volume = 40, capacity = 40, currentVolume = 6.5
+6.: Volume = 46.5, capacity = 40, currentVolume = 6.5
+
+isValidVolume() => false
+Volume er lik currentvolume. Legger til 6.5, og da vil currentvolume bli større enn kapasiteten. 

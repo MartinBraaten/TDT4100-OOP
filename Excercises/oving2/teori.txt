@@ -1,0 +1,2 @@
+1. Synlighetsmodifikator er f.eks public og private, som definerer om noe er offentlig eller privat. 
+2. Forskjellen på private og public er at public vises for alle, mens private kun vises for klassen. 
